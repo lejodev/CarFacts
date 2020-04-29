@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CarFacts</title>
 </head>
 <body>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        .car-image{
+            width: 600px;
+        }
+        .thick-green-border {
+            border-color: darkblue;
+            border-width: 10px;
+            border-style: hidden;
+            border-radius: 100%;
+  }
+        .higher-title{
+            font-size: 100px;
+        }
+        h2{
+            color: brown;
+            font-family: "Lobster";
+        }
+        .smaller-image{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
     <div style="background-color: cadetblue;">
-        <h1> This is a classic cars page</h1>
+        <h1 class="higher-title"> This is a classic cars page</h1>
         <h2> Some facts about this website </h2>
         <p> In this site you will find information about a some types of cars and some photos of the most representative of each category</p>
     </div>
@@ -16,29 +39,34 @@
         <ul>
             <li><a href="#muscleCarsId"> Muscle cars</a> </li>
             <li><a href="#SUVId"> SUV</a></li>
-            <li><a href="#"> Sport</a></li>
-            <li><a href="#"> Passengers</a></li>
+            <li><a href="#sportId"> Sport</a></li>
         </ul>
         <h2 id="muscleCarsId">Muscle cars</h2>
         <p>Muscle car is an American term for high-performance coupes, usually but not limited to rear-wheel drive and fitted with a high-displacement V8 engine. The term originated for 1960s and early 1970s special editions of mass-production cars which were designed for drag racing</p>
-        <a href="https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)"><img src="https://cdn.pixabay.com/photo/2014/03/19/14/50/ford-290615_960_720.jpg" alt="Ford mustang"></a>
+        <a href="https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)"><img class="car-image" src="https://cdn.pixabay.com/photo/2014/03/19/14/50/ford-290615_960_720.jpg" alt="Ford mustang"></a>
 
         <h2 id="SUVId">SUV</h2>
         <p>Sport utility vehicle (SUV) is a category of motor vehicles that combine elements of road-going passenger cars with features from off-road vehicles, such as raised ground clearance and four-wheel drive.</p>
-        <a href="https://en.wikipedia.org/wiki/Volkswagen_Tiguan#Second_generation_(2016%E2%80%93present)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg/1024px-2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg" alt="Volswagen Tiguan"></a>
+        <a href="https://en.wikipedia.org/wiki/Volkswagen_Tiguan#Second_generation_(2016%E2%80%93present)"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg/1024px-2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg" alt="Volswagen Tiguan"></a>
         
         <h2 id="sportId"> Sport</h2>
         <p>A sports car is designed to emphasise handling, performance or thrill of driving. Sports cars originated in Europe in the early 1900s and are currently produced by many manufacturers around the world.</p>
-        <a href="https://en.wikipedia.org/wiki/Mazda_MX-5"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/1024px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg" alt="Mazda MX%"></a>
+        <a href="https://en.wikipedia.org/wiki/Mazda_MX-5"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/1024px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg" alt="Mazda MX%"></a>
     </div>
     <hr>
-    
+
+    <h2> Choose your favorite car</h2>
     <form style="background-color: cadetblue;">
         <label><input type="radio" name="cars"> Ford Mustang </label><br>
-        <label><input type="radio" name="cars"> Volkswagen Tiguall All Space</label><br>
+        <label><input type="radio" name="cars"> Volkswagen Tiguan All Space</label><br>
         <label><input type="radio" name="cars"> Mazda MX5</label>
     </form><br>
     <input type="text" placeholder="Type here" required>
+    <br>
+    <hr>
+    <br>
+    <img class="thick-green-border smaller-image" src="https://pict1.reezocar.com/images/480/automobile.de/RZCATMDE264066822/FORD-MUSTANG-00.jpg">
+    <img class="thick-green-border smaller-image" src="https://i.pinimg.com/originals/07/36/b5/0736b59b09ede26ddb629d40b5783ae6.jpg">
 
 </body>
 </html>
