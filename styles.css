@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-color: #191919;
+}
+
+#main-title {
+    /* position: relative; */
+    display: inline-block;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-color: #191919; 07396869*/
+    background: linear-gradient(#073968cc, #191919);
+}
+
+h1 {
+    font-size: 80px;
+    color: rgb(211, 199, 199);
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#main-nav {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.anchors {
+    color: white;
+    text-decoration: none;
+}
+
+.anchors:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: beige;
+    text-align: justify;
+}
+
+.featured-container{
+    background: #191919;
+    margin: 20px;
+    height: 800pt;
+    overflow: visible;
+}
+
+.main-poster {
+    width: auto;
+    height: 60%;
+    /* background-color: bisque; */
+    position: relative;
+    background-image: url("https://www.slashgear.com/wp-content/uploads/2020/04/abt-audi-rs6-r-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+}
+
+.poster-background {
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.secondary-posters {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
+
+.poster {
+    border-spacing: 0px;
+    border: 5px solid #362c2c;
+    /* padding: 2px; */
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+    display: inline-block;
+    height: 100%;
+    width: 33.1%;
+    /* background-color: burlywood; */
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+#iconics-container {
+    overflow: hidden;
+    position: relative;
+    margin: 0px 300px 0px 20px ;
+    height: fit-content;
+    width: auto;
+    display: block;
+}
+
+.iconic-article {
+    width: auto;
+    height: 300px;
+    border: gray 1px solid;
+    margin-bottom: 4px;
+}
+
+.iconic-image {
+    float: right;
+    background-color: gray;
+    width: 45%;
+    height: 100%;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.iconic-text {
+    width: 55%;
+    clear: right;
+    display: inline-block;
+}
+
+.poster-title {
+    /* size: 40px; */
+    text-align: left;
+    background: linear-gradient(rgba(255, 255, 255, 0), black);
+    display: inline-block;
+    width: 100%;
+    height: 35%;
+    font-size: 30px;
+    bottom: 0;
+    position: absolute;
+}

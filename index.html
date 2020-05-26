@@ -4,75 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarFacts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <style>
-        #pageTitle{
-            padding:0% 0% 0% 35%;
-        }
-        [type="radio"]{
-            margin: 30px 30px 30px 30px;
-        }
-        .car-image{
-            width: 600px;
-        }
-        .thick-green-border {
-            border-color: darkblue;
-            border-width: 10px;
-            border-style: hidden;
-            border-radius: 100%;
-  }
-        .higher-title{
-            font-size: 100px;
-        }
-        h2{
-            color: brown;
-            font-family: "Lobster";
-        }
-        .smaller-image{
-            width: 100px;
-            height: 100px;
-        }
-    </style>
-    <div style="background-color: cadetblue;">
-        <h1 id="pageTitle" class="higher-title"> Car Facts</h1>
-        <h2> Some facts about this website </h2>
-        <p> In this site you will find information about a some types of cars and some photos of the most representative of each category</p>
-    </div>
-    <div style="background: darkkhaki;">
-        <h2> Categories </h2>    
-        <ul>
-            <li><a href="#muscleCarsId"> Muscle cars</a> </li>
-            <li><a href="#SUVId"> SUV</a></li>
-            <li><a href="#sportId"> Sport</a></li>
+        <!-- <style>
+            #pageTitle{
+                padding:0% 0% 0% 35%;
+            }
+            [type="radio"]{
+                margin: 30px 30px 30px 30px;
+            }
+            .car-image{
+                width: 600px;
+            }
+            .thick-green-border {
+                border-color: darkblue;
+                border-width: 10px;
+                border-style: hidden;
+                border-radius: 100%;
+    }
+            .higher-title{
+                font-size: 100px;
+            }
+            h2{
+                color: brown;
+                font-family: "Lobster";
+            }
+            .smaller-image{
+                width: 100px;
+                height: 100px;
+            } -->
+    <!-- </style> -->
+    <header id="main-title">
+        <h1> Car Facts</h1>
+    </header>
+    <!-- <hr> -->
+    <nav id="main-nav">
+        <ul id="idNav">
+            <li><a class="anchors" href="#"> CAR NEWS</a> </li>
+            <li><a class="anchors" href="#SUVId"> CAR GEEKS</a></li>
+            <li><a class="anchors" href="#sportId"> VIDEOS</a></li>
+            <li><a class="anchors" href="#">CAR CATEGORIES  </a></li>
         </ul>
-        <h2 id="muscleCarsId">Muscle cars</h2>
-        <p>Muscle car is an American term for high-performance coupes, usually but not limited to rear-wheel drive and fitted with a high-displacement V8 engine. The term originated for 1960s and early 1970s special editions of mass-production cars which were designed for drag racing</p>
-        <a href="https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)"><img class="car-image" src="https://cdn.pixabay.com/photo/2014/03/19/14/50/ford-290615_960_720.jpg" alt="Ford mustang"></a>
-
-        <h2 id="SUVId">SUV</h2>
-        <p>Sport utility vehicle (SUV) is a category of motor vehicles that combine elements of road-going passenger cars with features from off-road vehicles, such as raised ground clearance and four-wheel drive.</p>
-        <a href="https://en.wikipedia.org/wiki/Volkswagen_Tiguan#Second_generation_(2016%E2%80%93present)"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg/1024px-2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg" alt="Volswagen Tiguan"></a>
-        
-        <h2 id="sportId"> Sport</h2>
-        <p>A sports car is designed to emphasise handling, performance or thrill of driving. Sports cars originated in Europe in the early 1900s and are currently produced by many manufacturers around the world.</p>
-        <a href="https://en.wikipedia.org/wiki/Mazda_MX-5"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/1024px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg" alt="Mazda MX%"></a>
-    </div>
-    <hr>
-
-    <h2> Choose your favorite car</h2>
-    <form style="background-color: cadetblue;">
-        <label><input type="radio" name="cars"> Ford Mustang </label><br>
-        <label><input type="radio" name="cars"> Volkswagen Tiguan All Space</label><br>
-        <label><input type="radio" name="cars"> Mazda MX5</label>
-    </form><br>
-    <input type="text" placeholder="Type here" required>
-    <br>
-    <hr>
-    <br>
-    <img class="thick-green-border smaller-image" src="https://pict1.reezocar.com/images/480/automobile.de/RZCATMDE264066822/FORD-MUSTANG-00.jpg">
-    <img class="thick-green-border smaller-image" src="https://i.pinimg.com/originals/07/36/b5/0736b59b09ede26ddb629d40b5783ae6.jpg">
+    </nav>
+    <main>
+        <section class="featured-container">
+            <a href="https://www.topgear.com/long-term-car-reviews/audi/rs6/rs-6-tfsi-quattro-launch-edition-5dr-tiptronic/report-2" target="_blank">
+                <article class="main-poster">
+                    <header class="poster-title">
+                        <h2>
+                            Audi RS6 Avant long-term review: By Top Gear
+                        </h2>
+                    </header>
+                </article>
+            </a>
+            <div class="secondary-posters">
+                <article class="poster">
+                    <a href="https://thedriven.io/2020/05/12/tesla-roadster-takes-back-seat-to-cybertruck-and-semi-electric-truck/">
+                        <div>
+                            <img src="https://mfiles.alphacoders.com/794/794477.jpg" alt="Tesla Roadster">
+                        </div>
+                        <header class="poster-title">
+                            <h2>New Tesla Roadster</h2>
+                        </header>
+                    </a>
+                </article>
+                <article class="poster">
+                    <a href="https://www.teslarati.com/spacex-starlink-launch-rideshare-debut/" target="_blank">
+                        <div>
+                            <img src="https://50skyshades.com/images/o/spacex-falcon-9-booster-achieves-epic-vertical-landing-5637-NrBB21ItGax91pyzo8AzuDQ2Y.jpg" alt="Tesla Roadster">
+                        </div>
+                        <header class="poster-title">
+                            <h2>SpaceX Starlink launch</h2>
+                        </header>
+                    </a>
+                    </header>
+                </article>
+                <article class="poster">
+                    <a href="https://fordauthority.com/2020/05/new-ford-focus-st-was-specifically-developed-to-destroy-the-competition/" target="_blank">
+                        <div class="backgr">
+                            <img src="https://www.car-engineer.com/wp-content/uploads/2015/02/Ford-Focus-RS-2015.jpg" alt="Tesla Roadster">
+                        </div>
+                        <header class="poster-title">
+                            <h2>New Ford Focus ST </h2>
+                        </header>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <!-- Modifying -->
+        <section id="iconics-container">
+            <h2>Most Iconic cars of every category</h2>
+            <article>
+                <div class="iconic-article">
+                    <div class="iconic-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicisssss fdasf dsffs sdfrw adfew </p>
+                    </div>
+                    <div class="iconic-image"></div>
+                </div>
+                <div class="iconic-article">
+                    <div class="iconic-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicisssss fdasf dsffs sdfrw adfew </p>
+                    </div>
+                    <div class="iconic-image"></div>
+                </div>
+                <div class="iconic-article">
+                    <div class="iconic-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicisssss fdasf dsffs sdfrw adfew </p>
+                    </div>
+                    <div class="iconic-image"></div>
+                </div>
+            </article>
+        </section>
+        <div style="background: darkkhaki;">
+            <h2 id="muscleCarsId">Muscle cars</h2>
+            <p>Muscle car is an American term for high-performance coupes, usually but not limited to rear-wheel drive and fitted with a high-displacement V8 engine. The term originated for 1960s and early 1970s special editions of mass-production cars which were designed for drag racing</p>
+            <a href="https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)"><img class="car-image" src="https://cdn.pixabay.com/photo/2014/03/19/14/50/ford-290615_960_720.jpg" alt="Ford mustang"></a>
+    
+            <h2 id="SUVId">SUV</h2>
+            <p>Sport utility vehicle (SUV) is a category of motor vehicles that combine elements of road-going passenger cars with features from off-road vehicles, such as raised ground clearance and four-wheel drive.</p>
+            <a href="https://en.wikipedia.org/wiki/Volkswagen_Tiguan#Second_generation_(2016%E2%80%93present)"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg/1024px-2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg" alt="Volswagen Tiguan"></a>
+            
+            <h2 id="sportId"> Sport</h2>
+            <p>A sports car is designed to emphasise handling, performance or thrill of driving. Sports cars originated in Europe in the early 1900s and are currently produced by many manufacturers around the world.</p>
+            <a href="https://en.wikipedia.org/wiki/Mazda_MX-5"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/1024px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg" alt="Mazda MX%"></a>
+        </div>
+        <hr>
+    
+        <h2> Choose your favorite car</h2>
+        <form style="background-color: cadetblue;">
+            <label><input type="radio" name="cars"> Ford Mustang </label><br>
+            <label><input type="radio" name="cars"> Volkswagen Tiguan All Space</label><br>
+            <label><input type="radio" name="cars"> Mazda MX5</label>
+        </form><br>
+        <input type="text" placeholder="Type here" required>
+        <br>
+        <hr>
+        <br>
+        <img class="thick-green-border smaller-image" src="https://pict1.reezocar.com/images/480/automobile.de/RZCATMDE264066822/FORD-MUSTANG-00.jpg">
+        <img class="thick-green-border smaller-image" src="https://i.pinimg.com/originals/07/36/b5/0736b59b09ede26ddb629d40b5783ae6.jpg">
+    </main>
 
 </body>
 </html>
