@@ -6,53 +6,25 @@
     <title>CarFacts</title>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-        <!-- <style>
-            #pageTitle{
-                padding:0% 0% 0% 35%;
-            }
-            [type="radio"]{
-                margin: 30px 30px 30px 30px;
-            }
-            .car-image{
-                width: 600px;
-            }
-            .thick-green-border {
-                border-color: darkblue;
-                border-width: 10px;
-                border-style: hidden;
-                border-radius: 100%;
-    }
-            .higher-title{
-                font-size: 100px;
-            }
-            h2{
-                color: brown;
-                font-family: "Lobster";
-            }
-            .smaller-image{
-                width: 100px;
-                height: 100px;
-            } -->
-    <!-- </style> -->
-    <header id="main-title">
+    <header class="head">
         <h1> Car Facts</h1>
+        <nav>
+            <ul>
+                <li><a class="anchors" href="#"> MAIN NEWS</a> </li>
+                <li><a class="anchors" href="#SUVId"> GEEK EV FACTS</a></li>
+                <li><a class="anchors" href="#sportId"> VIDEOS</a></li>
+                <li><a class="anchors" href="#">CAR CATEGORIES  </a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- <hr> -->
-    <nav id="main-nav">
-        <ul id="idNav">
-            <li><a class="anchors" href="#"> CAR NEWS</a> </li>
-            <li><a class="anchors" href="#SUVId"> CAR GEEKS</a></li>
-            <li><a class="anchors" href="#sportId"> VIDEOS</a></li>
-            <li><a class="anchors" href="#">CAR CATEGORIES  </a></li>
-        </ul>
-    </nav>
     <main>
         <section class="featured-container">
             <a href="https://www.topgear.com/long-term-car-reviews/audi/rs6/rs-6-tfsi-quattro-launch-edition-5dr-tiptronic/report-2" target="_blank">
                 <article class="main-poster">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-audi-rs6-avant-127-1574772339.jpg?crop=0.742xw:0.558xh;0.0128xw,0.214xh&resize=1200:*" alt="Audi RS6 Avant">
                     <header class="poster-title">
                         <h2>
                             Audi RS6 Avant long-term review: By Top Gear
@@ -63,9 +35,7 @@
             <div class="secondary-posters">
                 <article class="poster">
                     <a href="https://thedriven.io/2020/05/12/tesla-roadster-takes-back-seat-to-cybertruck-and-semi-electric-truck/">
-                        <div>
-                            <img src="https://mfiles.alphacoders.com/794/794477.jpg" alt="Tesla Roadster">
-                        </div>
+                        <img src="https://mfiles.alphacoders.com/794/794477.jpg" alt="Tesla Roadster">
                         <header class="poster-title">
                             <h2>New Tesla Roadster</h2>
                         </header>
@@ -73,9 +43,7 @@
                 </article>
                 <article class="poster">
                     <a href="https://www.teslarati.com/spacex-starlink-launch-rideshare-debut/" target="_blank">
-                        <div>
-                            <img src="https://50skyshades.com/images/o/spacex-falcon-9-booster-achieves-epic-vertical-landing-5637-NrBB21ItGax91pyzo8AzuDQ2Y.jpg" alt="Tesla Roadster">
-                        </div>
+                        <img src="https://50skyshades.com/images/o/spacex-falcon-9-booster-achieves-epic-vertical-landing-5637-NrBB21ItGax91pyzo8AzuDQ2Y.jpg" alt="Tesla Roadster">
                         <header class="poster-title">
                             <h2>SpaceX Starlink launch</h2>
                         </header>
@@ -84,9 +52,7 @@
                 </article>
                 <article class="poster">
                     <a href="https://fordauthority.com/2020/05/new-ford-focus-st-was-specifically-developed-to-destroy-the-competition/" target="_blank">
-                        <div class="backgr">
-                            <img src="https://www.car-engineer.com/wp-content/uploads/2015/02/Ford-Focus-RS-2015.jpg" alt="Tesla Roadster">
-                        </div>
+                        <img src="https://www.car-engineer.com/wp-content/uploads/2015/02/Ford-Focus-RS-2015.jpg" alt="Tesla Roadster">
                         <header class="poster-title">
                             <h2>New Ford Focus ST </h2>
                         </header>
@@ -94,58 +60,105 @@
                 </article>
             </div>
         </section>
-        <!-- Modifying -->
-        <section id="iconics-container">
-            <h2>Most Iconic cars of every category</h2>
+        <section class="iconics-container">
+            <h2>Today's Automakers</h2>
             <article>
                 <div class="iconic-article">
-                    <div class="iconic-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicisssss fdasf dsffs sdfrw adfew </p>
+                    <div class="img-container">
+                        <img src="https://d500.epimg.net/cincodias/imagenes/2019/05/07/motor/1557234125_886115_1557234517_noticia_normal.jpg" alt="Tesla">
                     </div>
-                    <div class="iconic-image"></div>
+                    <div class="iconic-text-container">
+                        <h2>Tesla</h2>
+                        <p>
+                            Tesla, Inc. (TSLA) stock will open Friday's session less than 100 points below February's all-time high at $969, following a dramatic recovery of 500-plus points off March's pandemic low, setting the stage for a potential breakout that lifts the electric vehicle manufacturer into quadruple digits. That would mark a historic accomplishment in the traditionally cyclical automotive sector, especially with combustion engine rivals cutting production due to high unemployment rates.
+                        </p>
+                    </div>
                 </div>
                 <div class="iconic-article">
-                    <div class="iconic-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicisssss fdasf dsffs sdfrw adfew </p>
+                    <div class="img-container">
+                        <img src="https://logos-download.com/wp-content/uploads/2016/02/Mazda-logo-on-the-wet-car-HD-wallpaper-1600x1200.jpg" alt="Mazda">
                     </div>
-                    <div class="iconic-image"></div>
+                    <div class="iconic-text-container">
+                        <h2>Mazda</h2>
+                        <p>
+                            Mazda broke through the string of negative sales reports brought on the COVID-19 pandemic by reporting a 1% sales increase that countered the overall drop in vehicles sales during the month.
+                        </p>
+                        <p>
+                            Mazda benefitted from strong sales of the CX-9 crossover, which increased by 21%, reflecting the steady growth of sales of utility vehicles across the industry. Sales of the Mazda MX-5 Miata also increased, the company said.</p>
+                    </div>
                 </div>
                 <div class="iconic-article">
-                    <div class="iconic-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicisssss fdasf dsffs sdfrw adfew </p>
+                    <div class="img-container">
+                        <img src="https://cdn.statically.io/img/wallpaperaccess.com/full/913755.jpg" alt="Jaguar">
                     </div>
-                    <div class="iconic-image"></div>
+                    <div class="iconic-text-container">
+                        <h2>Jaguar</h2>
+                        <p>
+                            SHANGHAI -- Jaguar Land Rover has entered into agreements with lenders in China for a secured term loan facility of 5 billion yuan ($704.5 million), its first debt financing in China.
+                        </p>
+                        <p>
+                            Arthur Yu, chief financial officer of Jaguar Land Rover China, said the Chinese banks that would provide a three-year revolving loan included Bank of China, ICBC, China Construction Bank, Bank of Communications and Shanghai Pudong Development Bank.
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
-        <div style="background: darkkhaki;">
-            <h2 id="muscleCarsId">Muscle cars</h2>
-            <p>Muscle car is an American term for high-performance coupes, usually but not limited to rear-wheel drive and fitted with a high-displacement V8 engine. The term originated for 1960s and early 1970s special editions of mass-production cars which were designed for drag racing</p>
-            <a href="https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)"><img class="car-image" src="https://cdn.pixabay.com/photo/2014/03/19/14/50/ford-290615_960_720.jpg" alt="Ford mustang"></a>
-    
-            <h2 id="SUVId">SUV</h2>
-            <p>Sport utility vehicle (SUV) is a category of motor vehicles that combine elements of road-going passenger cars with features from off-road vehicles, such as raised ground clearance and four-wheel drive.</p>
-            <a href="https://en.wikipedia.org/wiki/Volkswagen_Tiguan#Second_generation_(2016%E2%80%93present)"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg/1024px-2019_Volkswagen_Tiguan_Allspace_R-Line_TDi_4Motion_2.0.jpg" alt="Volswagen Tiguan"></a>
-            
-            <h2 id="sportId"> Sport</h2>
-            <p>A sports car is designed to emphasise handling, performance or thrill of driving. Sports cars originated in Europe in the early 1900s and are currently produced by many manufacturers around the world.</p>
-            <a href="https://en.wikipedia.org/wiki/Mazda_MX-5"><img class="car-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg/1024px-2015_Mazda_MX-5_ND_2.0_SKYACTIV-G_160_i-ELOOP_Rubinrot-Metallic_Vorderansicht.jpg" alt="Mazda MX%"></a>
-        </div>
-        <hr>
-    
-        <h2> Choose your favorite car</h2>
-        <form style="background-color: cadetblue;">
-            <label><input type="radio" name="cars"> Ford Mustang </label><br>
-            <label><input type="radio" name="cars"> Volkswagen Tiguan All Space</label><br>
-            <label><input type="radio" name="cars"> Mazda MX5</label>
-        </form><br>
-        <input type="text" placeholder="Type here" required>
-        <br>
-        <hr>
-        <br>
-        <img class="thick-green-border smaller-image" src="https://pict1.reezocar.com/images/480/automobile.de/RZCATMDE264066822/FORD-MUSTANG-00.jpg">
-        <img class="thick-green-border smaller-image" src="https://i.pinimg.com/originals/07/36/b5/0736b59b09ede26ddb629d40b5783ae6.jpg">
+        <section class="videos-container">
+            <article>
+                <h2>Where is the Tesla Roadster launched in 2018 to space?</h2>
+                <iframe width="727" height="409" src="https://www.youtube.com/embed/0yIf9t2QgDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2></h2>
+            </article>
+            <article>
+                <h2>The all new Elecetric cars on roads in 2020</h2>
+                <iframe width="727" height="409" src="https://www.youtube.com/embed/GDoI16RmxqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2></h2>
+            </article>
+            <article>
+                <h2>EV cars Miths vs Facts</h2>
+                <iframe width="727" height="409" src="https://www.youtube.com/embed/kk7ZTn9g7bY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2></h2>
+            </article>
+        </section>
+        <section class="our-writers">
+            <article class="writer">
+                <div class="wrtiter-img-container">
+                    <img src="https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="writer1 Content Manager" title="writer1 Content Manager">
+                </div>
+                <h2>Lorem 1</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deleniti assumenda! Sunt iste facilis, nesciunt veritatis sed aliquid laudantium velit accusantium maiores accusamus laborum, repellendus expedita consequatur quisquam placeat ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eaque obcaecati, assumenda quo delectus asperiores illo tenetur provident minima, vitae molestias magnam, natus consequuntur quae. Vitae perspiciatis voluptatem nam fugit?</p>
+            </article>
+            <article class="writer">
+                <div class="wrtiter-img-container">
+                    <img src="https://pbs.twimg.com/profile_images/1061275018926194690/6MWH9Xi_.jpg" alt="writer1 Content Manager" title="writer1 Content Manager">
+                </div>
+                <h2>Lorem 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt est perspiciatis vel at fugiat consequuntur? Commodi voluptatem voluptates atque nesciunt aperiam molestias quibusdam necessitatibus, velit molestiae dolores et, ad reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, quam qui! Dicta modi similique quibusdam enim ab! Nulla, ea saepe, expedita fugiat consequatur quaerat quod, provident aliquid asperiores omnis delectus.</p>
+            </article>
+            <article class="writer">
+                <div class="wrtiter-img-container">
+                    <img src="https://randomuser.me/api/portraits/men/90.jpg" alt="writer1 Content Manager" title="writer1 Content Manager">
+                </div>
+                <h2>Lorem 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam harum iure debitis. Vel voluptate vitae eos illum et assumenda explicabo, consequatur maxime numquam voluptatum maiores nesciunt facere. Eos, nesciunt optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil delectus libero quae? Quisquam, similique perferendis alias necessitatibus magni sit aperiam placeat, doloribus unde eaque non nam aliquam, nostrum maxime.</p>
+            </article>
+        </section>
+        <section class="form-newsletter">
+            <h2>Register in CarFacts Newsletter</h2>
+            <form action="send">
+                <label for="id-name">Name <input type="text"></label>
+                <label for="id-mail">e-mail<input type="email" name="mail" id="id-mail"></label>
+                <label for="id-password"> Password <input type="password" id="id-password"></label>
+                <label for="id-confirm-password"> Confirm password <input type="password" id="id-confirm-password"></label>
+                <label for="id-button-regster"><button id="id-button-regster">Register</button></button></label>
+            </form>
+        </section>
     </main>
+    <footer>
+        <div class="authorship">
+            <p>2020 All Rights Reserved</p>
+        </div>
+    </footer>
 
 </body>
 </html>
