@@ -1,0 +1,15 @@
+@mixin column-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@mixin header-gradient ($color1, $color2){
+    background-image: linear-gradient($color1, $color2);
+    ul {
+        li {
+            &:hover {
+                background-color: rgb(129, 50, 18)
+            }
+        }
+    }
+}

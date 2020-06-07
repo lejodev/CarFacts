@@ -8,7 +8,6 @@ body {
 
 .head {
   width: 100%;
-  border-bottom: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,12 +15,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d3c3), to(#9c5900));
+  background-image: linear-gradient(#d3d3c3, #9c5900);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.head ul li:hover {
+  background-color: #813212;
 }
 
 .head ul {
@@ -50,11 +55,10 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   position: relative;
   height: 90vh;
-  border-bottom: 2px solid black;
 }
 
 .featured-container .main-poster img {
@@ -75,7 +79,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  border-bottom: 2px solid black;
 }
 
 .featured-container .secondary-posters .poster {
@@ -96,23 +99,26 @@ body {
   bottom: 0;
 }
 
-.iconics-container {
+.automakers-container {
   margin-top: 5vh;
   margin-left: 5vw;
+  margin-bottom: 40px;
   width: 70vw;
 }
 
-.iconics-container article {
+.automakers-container article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
-.iconics-container article .iconic-article {
+.automakers-container article .automaker-article {
+  background-color: #f1dcdc;
+  margin: 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,23 +130,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid black;
   height: 55vh;
 }
 
-.iconics-container article .iconic-article .img-container {
+.automakers-container article .automaker-article .img-container {
   position: relative;
   height: 100%;
   width: 40%;
-  border-right: 2px solid black;
 }
 
-.iconics-container article .iconic-article .img-container img {
+.automakers-container article .automaker-article .img-container img {
   width: 100%;
   height: 100%;
 }
 
-.iconics-container article .iconic-article .iconic-text-container {
+.automakers-container article .automaker-article .automaker-text-container {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,12 +156,67 @@ body {
   width: 60%;
 }
 
-.iconics-container article .iconic-article .iconic-text-container p {
+.automakers-container article .automaker-article .automaker-text-container p {
   width: 100%;
+}
+
+.fun-facts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fun-facts-container .img-fact {
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+}
+
+.fun-facts-container .fact {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.fun-facts-container .fact-2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  width: 60vw;
+}
+
+.fun-facts-container p {
+  font-size: 2em;
+  font-style: italic;
 }
 
 .videos-container {
   width: 100%;
+  background-color: rgba(239, 229, 226, 0.97);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,14 +230,13 @@ body {
 }
 
 .videos-container article {
-  border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   width: 70%;
 }
 
@@ -188,6 +246,19 @@ body {
 }
 
 .our-writers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-writers .writers {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,7 +272,7 @@ body {
           justify-content: space-evenly;
 }
 
-.our-writers .writer {
+.our-writers .writers .writer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,24 +280,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  background-color: #d2ead3c7;
+  border-radius: 4vh;
+  padding-top: 2vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 25vw;
 }
 
-.our-writers .writer .wrtiter-img-container {
+.our-writers .writers .writer .wrtiter-img-container {
   width: 20vw;
   height: 20vw;
 }
 
-.our-writers .writer .wrtiter-img-container img {
+.our-writers .writers .writer .wrtiter-img-container img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.our-writers .writer p {
+.our-writers .writers .writer p {
+  text-align: justify;
+  padding: 2em;
   font-style: italic;
   font-size: 1.5em;
 }
@@ -237,16 +313,16 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 50px;
 }
 
-.form-newsletter form {
-  height: 70vh;
+.form-newsletter form, .form-newsletter .form-newsletter {
+  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 60px 40px;
@@ -258,13 +334,12 @@ body {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 40%;
-  border: 2px solid black;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.form-newsletter form input {
+.form-newsletter form input, .form-newsletter .form-newsletter input {
   width: 100%;
   height: 30px;
 }
