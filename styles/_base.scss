@@ -13,7 +13,7 @@ body {
     width: 100%;
     // border-bottom: 2px solid black;
     @include column-wrap();
-    @include header-gradient(rgb(224, 224, 28), rgb(27, 27, 2));
+    @include header-gradient((red), rgb(27, 27, 2));
     justify-content: space-between;
     align-items: center;
     ul {
