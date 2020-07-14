@@ -37,9 +37,17 @@ body {
     z-index: -1;
     width: 100%;
     .main-poster {
-        .cls{
-            background-color: slategrey;
-            height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        .video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+            transform: translateY(-50%) translateX(-50%);
         }
     }
     .secondary-posters {

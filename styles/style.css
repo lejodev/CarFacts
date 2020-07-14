@@ -49,9 +49,21 @@ body {
   width: 100%;
 }
 
-.featured-container .main-poster .cls {
-  background-color: slategrey;
+.featured-container .main-poster {
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-container .main-poster .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
 .featured-container .secondary-posters {
