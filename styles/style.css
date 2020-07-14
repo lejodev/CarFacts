@@ -47,10 +47,11 @@ body {
 .featured-container {
   z-index: -1;
   width: 100%;
+  height: 200vh;
 }
 
 .featured-container .main-poster {
-  height: 100vh;
+  height: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -67,7 +68,7 @@ body {
 }
 
 .featured-container .secondary-posters {
-  height: 100vh;
+  height: 50%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[2];
@@ -114,64 +115,41 @@ body {
 }
 
 .automakers-container {
-  margin-top: 5vh;
-  margin-left: 5vw;
-  margin-bottom: 40px;
-  width: 70vw;
-}
-
-.automakers-container article {
+  width: 100%;
+  height: 80vh;
+  background-color: #234;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-}
-
-.automakers-container article .automaker-article {
-  background-color: #f1dcdc;
-  margin: 1vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  padding: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 55vh;
 }
 
-.automakers-container article .automaker-article .img-container {
-  position: relative;
-  height: 100%;
-  width: 40%;
-}
-
-.automakers-container article .automaker-article .img-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.automakers-container article .automaker-article .automaker-text-container {
-  padding: 10px;
+.automakers-container .automakers-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  width: 60%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30vw;
+  background-color: teal;
+  height: 100%;
 }
 
-.automakers-container article .automaker-article .automaker-text-container p {
-  width: 100%;
+.automakers-container .automakers-info * {
+  margin: 0;
+}
+
+.automakers-container .automakers-show {
+  width: 70vw;
+  height: 100%;
+  background-color: olivedrab;
 }
 
 .fun-facts-container {
